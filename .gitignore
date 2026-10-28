@@ -40,9 +40,12 @@ venv.bak/
 data/raw/*
 data/curated/*
 data/external/*
+data/cache/*.pkl
 !data/raw/.gitkeep
 !data/curated/.gitkeep
 !data/external/.gitkeep
+!data/cache/.gitkeep
+!data/cache/gnn_dataset_*_seq12.pkl
 
 # Models
 *.pt
@@ -53,6 +56,10 @@ data/external/*
 *.joblib
 models/
 !models/.gitkeep
+!models/gnn_*_best.pt
+!models/gnn_*_results.json
+!models/gnn_*_predictions.npz
+!models/training_log_*.txt
 
 # Logs
 *.log
