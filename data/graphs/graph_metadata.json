@@ -1,0 +1,150 @@
+{
+  "nodos": {
+    "IDEAM_100101": {
+      "tipo": "ideam",
+      "nombre": "Cartagena Rafael N\u00fa\u00f1ez"
+    },
+    "IDEAM_100102": {
+      "tipo": "ideam",
+      "nombre": "Cartagena Zona Franca"
+    },
+    "IDEAM_100103": {
+      "tipo": "ideam",
+      "nombre": "Turbaco"
+    },
+    "IDEAM_100104": {
+      "tipo": "ideam",
+      "nombre": "Arjona"
+    },
+    "IDEAM_100105": {
+      "tipo": "ideam",
+      "nombre": "Mar\u00eda La Baja"
+    },
+    "IDEAM_100106": {
+      "tipo": "ideam",
+      "nombre": "San Juan Nepomuceno"
+    },
+    "IDEAM_100107": {
+      "tipo": "ideam",
+      "nombre": "El Carmen de Bol\u00edvar"
+    },
+    "IDEAM_100108": {
+      "tipo": "ideam",
+      "nombre": "San Onofre"
+    },
+    "CAPTACION_BOSQUE": {
+      "tipo": "captacion",
+      "nombre": "Captaci\u00f3n El Bosque"
+    },
+    "COAGULACION": {
+      "tipo": "proceso",
+      "nombre": "Coagulaci\u00f3n-Floculaci\u00f3n"
+    },
+    "SEDIMENTACION": {
+      "tipo": "proceso",
+      "nombre": "Sedimentaci\u00f3n"
+    },
+    "FILTRACION": {
+      "tipo": "proceso",
+      "nombre": "Filtraci\u00f3n R\u00e1pida"
+    },
+    "CLORACION": {
+      "tipo": "proceso",
+      "nombre": "Cloraci\u00f3n"
+    },
+    "SALIDA_PLANTA": {
+      "tipo": "salida",
+      "nombre": "Salida Planta - Red Distribuci\u00f3n"
+    }
+  },
+  "edges": [
+    {
+      "source": "IDEAM_100101",
+      "target": "CAPTACION_BOSQUE",
+      "tipo": "hidrologico",
+      "weight": 0.3,
+      "descripcion": "Bah\u00eda Cartagena - Rafael N\u00fa\u00f1ez"
+    },
+    {
+      "source": "IDEAM_100102",
+      "target": "CAPTACION_BOSQUE",
+      "tipo": "hidrologico",
+      "weight": 0.4,
+      "descripcion": "Canal del Dique - Zona Franca"
+    },
+    {
+      "source": "IDEAM_100103",
+      "target": "CAPTACION_BOSQUE",
+      "tipo": "hidrologico",
+      "weight": 0.5,
+      "descripcion": "Canal del Dique - Turbaco"
+    },
+    {
+      "source": "IDEAM_100104",
+      "target": "CAPTACION_BOSQUE",
+      "tipo": "hidrologico",
+      "weight": 0.6,
+      "descripcion": "Canal del Dique - Arjona"
+    },
+    {
+      "source": "IDEAM_100105",
+      "target": "CAPTACION_BOSQUE",
+      "tipo": "hidrologico",
+      "weight": 0.8,
+      "descripcion": "Canal del Dique - Mar\u00eda La Baja"
+    },
+    {
+      "source": "CAPTACION_BOSQUE",
+      "target": "COAGULACION",
+      "tipo": "hidraulico",
+      "weight": 1.0,
+      "descripcion": "Bombeo + dosificaci\u00f3n coagulante"
+    },
+    {
+      "source": "COAGULACION",
+      "target": "SEDIMENTACION",
+      "tipo": "hidraulico",
+      "weight": 1.0,
+      "descripcion": "Floculaci\u00f3n -> sedimentadores"
+    },
+    {
+      "source": "SEDIMENTACION",
+      "target": "FILTRACION",
+      "tipo": "hidraulico",
+      "weight": 1.0,
+      "descripcion": "Agua clarificada -> filtros"
+    },
+    {
+      "source": "SEDIMENTACION",
+      "target": "COAGULACION",
+      "tipo": "control",
+      "weight": 0.3,
+      "descripcion": "Turbidez sedimentador -> ajuste dosis"
+    },
+    {
+      "source": "FILTRACION",
+      "target": "CLORACION",
+      "tipo": "hidraulico",
+      "weight": 1.0,
+      "descripcion": "Agua filtrada -> cloraci\u00f3n"
+    },
+    {
+      "source": "FILTRACION",
+      "target": "COAGULACION",
+      "tipo": "control",
+      "weight": 0.5,
+      "descripcion": "Turbidez filtrada -> ajuste dosis"
+    },
+    {
+      "source": "CLORACION",
+      "target": "SALIDA_PLANTA",
+      "tipo": "hidraulico",
+      "weight": 1.0,
+      "descripcion": "Agua tratada -> distribuci\u00f3n"
+    }
+  ],
+  "node_features_dim": 16,
+  "edge_features_dim": 4,
+  "target_variable": "turbidez_filtrada_ntu (t+1h)",
+  "fecha_creacion": "2026-10-28T14:22:24.803559"
+}
