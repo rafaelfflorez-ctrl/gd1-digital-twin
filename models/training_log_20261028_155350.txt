@@ -1,0 +1,165 @@
+[15:53:50] ============================================================
+[15:53:50] ENTRENAMIENTO GNN GD1 COMPLETO - GAT
+[15:53:50] Device: cpu
+[15:53:50] Log: C:\Users\user\Desktop\proyecto acuacar\gd1-digital-twin\models\training_log_20261028_155350.txt
+[15:53:50] ============================================================
+[15:53:50] Cargando datasets...
+[15:53:51] Total timestamps (6h freq): 7305
+[15:53:51] Train: 4384, Val: 1460, Test: 1461
+[15:53:51]   Cargando train desde cache...
+[15:53:51]   Cargando val desde cache...
+[15:53:51]   Cargando test desde cache...
+[15:53:52] Secuencias: Train=4372, Val=1448, Test=1449
+[15:53:52] 
+Modelo: 246,145 parámetros
+[15:53:52] 
+=== INICIANDO ENTRENAMIENTO ===
+[15:53:54]     Epoch 1 Batch 0/274 - Loss: 0.6421 - 2s elapsed
+[15:55:22]     Epoch 1 Batch 50/274 - Loss: 0.0426 - 90s elapsed
+[15:56:48]     Epoch 1 Batch 100/274 - Loss: 0.0192 - 177s elapsed
+[15:58:17]     Epoch 1 Batch 150/274 - Loss: 0.0249 - 266s elapsed
+[15:59:45]     Epoch 1 Batch 200/274 - Loss: 0.0281 - 353s elapsed
+[16:01:12]     Epoch 1 Batch 250/274 - Loss: 0.0391 - 440s elapsed
+[16:02:57] Epoch  1: Train=0.0432, Val=0.0271, MAE=0.1408, RMSE=0.1646, MAPE=16.59% - 546s
+[16:02:57]   >>> Nuevo mejor modelo guardado (val_loss=0.0271)
+[16:02:59]     Epoch 2 Batch 0/274 - Loss: 0.0337 - 2s elapsed
+[16:04:29]     Epoch 2 Batch 50/274 - Loss: 0.0222 - 92s elapsed
+[16:05:59]     Epoch 2 Batch 100/274 - Loss: 0.0321 - 181s elapsed
+[16:07:28]     Epoch 2 Batch 150/274 - Loss: 0.0265 - 271s elapsed
+[16:08:59]     Epoch 2 Batch 200/274 - Loss: 0.0289 - 361s elapsed
+[16:10:27]     Epoch 2 Batch 250/274 - Loss: 0.0158 - 450s elapsed
+[16:12:13] Epoch  2: Train=0.0291, Val=0.0194, MAE=0.1195, RMSE=0.1393, MAPE=14.62% - 556s
+[16:12:13]   >>> Nuevo mejor modelo guardado (val_loss=0.0194)
+[16:12:15]     Epoch 3 Batch 0/274 - Loss: 0.0148 - 2s elapsed
+[16:13:47]     Epoch 3 Batch 50/274 - Loss: 0.0218 - 94s elapsed
+[16:15:17]     Epoch 3 Batch 100/274 - Loss: 0.0236 - 184s elapsed
+[16:16:46]     Epoch 3 Batch 150/274 - Loss: 0.0133 - 272s elapsed
+[16:18:15]     Epoch 3 Batch 200/274 - Loss: 0.0294 - 362s elapsed
+[16:19:42]     Epoch 3 Batch 250/274 - Loss: 0.0330 - 449s elapsed
+[16:21:28] Epoch  3: Train=0.0265, Val=0.0274, MAE=0.1432, RMSE=0.1657, MAPE=16.68% - 554s
+[16:21:28]   Paciencia: 1/12
+[16:21:29]     Epoch 4 Batch 0/274 - Loss: 0.0261 - 2s elapsed
+[16:22:58]     Epoch 4 Batch 50/274 - Loss: 0.0249 - 90s elapsed
+[16:24:29]     Epoch 4 Batch 100/274 - Loss: 0.0265 - 181s elapsed
+[16:25:56]     Epoch 4 Batch 150/274 - Loss: 0.0185 - 268s elapsed
+[16:27:25]     Epoch 4 Batch 200/274 - Loss: 0.0220 - 357s elapsed
+[16:28:54]     Epoch 4 Batch 250/274 - Loss: 0.0296 - 446s elapsed
+[16:30:39] Epoch  4: Train=0.0244, Val=0.0279, MAE=0.1448, RMSE=0.1672, MAPE=16.79% - 551s
+[16:30:39]   Paciencia: 2/12
+[16:30:41]     Epoch 5 Batch 0/274 - Loss: 0.0350 - 2s elapsed
+[16:32:07]     Epoch 5 Batch 50/274 - Loss: 0.0236 - 89s elapsed
+[16:33:32]     Epoch 5 Batch 100/274 - Loss: 0.0152 - 173s elapsed
+[16:34:57]     Epoch 5 Batch 150/274 - Loss: 0.0315 - 258s elapsed
+[16:36:25]     Epoch 5 Batch 200/274 - Loss: 0.0223 - 346s elapsed
+[16:37:53]     Epoch 5 Batch 250/274 - Loss: 0.0233 - 434s elapsed
+[16:39:37] Epoch  5: Train=0.0234, Val=0.0180, MAE=0.1147, RMSE=0.1342, MAPE=14.23% - 538s
+[16:39:37]   >>> Nuevo mejor modelo guardado (val_loss=0.0180)
+[16:39:39]     Epoch 6 Batch 0/274 - Loss: 0.0223 - 2s elapsed
+[16:41:04]     Epoch 6 Batch 50/274 - Loss: 0.0340 - 87s elapsed
+[16:42:32]     Epoch 6 Batch 100/274 - Loss: 0.0272 - 175s elapsed
+[16:44:00]     Epoch 6 Batch 150/274 - Loss: 0.0168 - 263s elapsed
+[16:45:22]     Epoch 6 Batch 200/274 - Loss: 0.0218 - 344s elapsed
+[16:46:46]     Epoch 6 Batch 250/274 - Loss: 0.0236 - 429s elapsed
+[16:48:25] Epoch  6: Train=0.0221, Val=0.0189, MAE=0.1168, RMSE=0.1376, MAPE=14.66% - 528s
+[16:48:25]   Paciencia: 1/12
+[16:48:27]     Epoch 7 Batch 0/274 - Loss: 0.0294 - 2s elapsed
+[16:49:53]     Epoch 7 Batch 50/274 - Loss: 0.0258 - 88s elapsed
+[16:51:22]     Epoch 7 Batch 100/274 - Loss: 0.0250 - 177s elapsed
+[16:52:47]     Epoch 7 Batch 150/274 - Loss: 0.0192 - 261s elapsed
+[16:54:14]     Epoch 7 Batch 200/274 - Loss: 0.0154 - 349s elapsed
+[16:55:42]     Epoch 7 Batch 250/274 - Loss: 0.0128 - 437s elapsed
+[16:57:28] Epoch  7: Train=0.0198, Val=0.0864, MAE=0.2488, RMSE=0.2946, MAPE=32.34% - 542s
+[16:57:28]   Paciencia: 2/12
+[16:57:30]     Epoch 8 Batch 0/274 - Loss: 0.0213 - 2s elapsed
+[16:58:53]     Epoch 8 Batch 50/274 - Loss: 0.0201 - 85s elapsed
+[17:00:15]     Epoch 8 Batch 100/274 - Loss: 0.0070 - 167s elapsed
+[17:01:35]     Epoch 8 Batch 150/274 - Loss: 0.0102 - 248s elapsed
+[17:02:57]     Epoch 8 Batch 200/274 - Loss: 0.0080 - 329s elapsed
+[17:04:19]     Epoch 8 Batch 250/274 - Loss: 0.0156 - 411s elapsed
+[17:05:56] Epoch  8: Train=0.0158, Val=0.1042, MAE=0.2901, RMSE=0.3230, MAPE=35.78% - 508s
+[17:05:56]   Paciencia: 3/12
+[17:05:57]     Epoch 9 Batch 0/274 - Loss: 0.0175 - 2s elapsed
+[17:07:23]     Epoch 9 Batch 50/274 - Loss: 0.0187 - 87s elapsed
+[17:08:44]     Epoch 9 Batch 100/274 - Loss: 0.0237 - 168s elapsed
+[17:10:05]     Epoch 9 Batch 150/274 - Loss: 0.0180 - 249s elapsed
+[17:11:28]     Epoch 9 Batch 200/274 - Loss: 0.0292 - 332s elapsed
+[17:12:50]     Epoch 9 Batch 250/274 - Loss: 0.0106 - 414s elapsed
+[17:14:26] Epoch  9: Train=0.0147, Val=0.0627, MAE=0.2192, RMSE=0.2503, MAPE=25.59% - 510s
+[17:14:26]   Paciencia: 4/12
+[17:14:28]     Epoch 10 Batch 0/274 - Loss: 0.0125 - 2s elapsed
+[17:15:49]     Epoch 10 Batch 50/274 - Loss: 0.0108 - 83s elapsed
+[17:17:10]     Epoch 10 Batch 100/274 - Loss: 0.0172 - 164s elapsed
+[17:18:31]     Epoch 10 Batch 150/274 - Loss: 0.0150 - 245s elapsed
+[17:19:52]     Epoch 10 Batch 200/274 - Loss: 0.0131 - 326s elapsed
+[17:21:13]     Epoch 10 Batch 250/274 - Loss: 0.0158 - 407s elapsed
+[17:22:48] Epoch 10: Train=0.0138, Val=0.0434, MAE=0.1799, RMSE=0.2084, MAPE=21.73% - 502s
+[17:22:48]   Paciencia: 5/12
+[17:22:50]     Epoch 11 Batch 0/274 - Loss: 0.0166 - 2s elapsed
+[17:24:10]     Epoch 11 Batch 50/274 - Loss: 0.0138 - 82s elapsed
+[17:25:33]     Epoch 11 Batch 100/274 - Loss: 0.0092 - 164s elapsed
+[17:26:54]     Epoch 11 Batch 150/274 - Loss: 0.0118 - 246s elapsed
+[17:28:15]     Epoch 11 Batch 200/274 - Loss: 0.0148 - 326s elapsed
+[17:29:36]     Epoch 11 Batch 250/274 - Loss: 0.0052 - 407s elapsed
+[17:31:10] Epoch 11: Train=0.0131, Val=0.0583, MAE=0.2146, RMSE=0.2415, MAPE=25.99% - 502s
+[17:31:10]   Paciencia: 6/12
+[17:31:12]     Epoch 12 Batch 0/274 - Loss: 0.0074 - 2s elapsed
+[17:32:36]     Epoch 12 Batch 50/274 - Loss: 0.0105 - 85s elapsed
+[17:33:57]     Epoch 12 Batch 100/274 - Loss: 0.0142 - 167s elapsed
+[17:35:18]     Epoch 12 Batch 150/274 - Loss: 0.0089 - 248s elapsed
+[17:36:40]     Epoch 12 Batch 200/274 - Loss: 0.0073 - 329s elapsed
+[17:38:01]     Epoch 12 Batch 250/274 - Loss: 0.0107 - 410s elapsed
+[17:39:36] Epoch 12: Train=0.0126, Val=0.0668, MAE=0.2275, RMSE=0.2589, MAPE=28.96% - 506s
+[17:39:36]   Paciencia: 7/12
+[17:39:38]     Epoch 13 Batch 0/274 - Loss: 0.0064 - 2s elapsed
+[17:40:59]     Epoch 13 Batch 50/274 - Loss: 0.0126 - 83s elapsed
+[17:42:20]     Epoch 13 Batch 100/274 - Loss: 0.0234 - 164s elapsed
+[17:43:41]     Epoch 13 Batch 150/274 - Loss: 0.0052 - 244s elapsed
+[17:45:02]     Epoch 13 Batch 200/274 - Loss: 0.0077 - 326s elapsed
+[17:46:23]     Epoch 13 Batch 250/274 - Loss: 0.0103 - 406s elapsed
+[17:47:59] Epoch 13: Train=0.0121, Val=0.0695, MAE=0.2363, RMSE=0.2638, MAPE=29.21% - 502s
+[17:47:59]   Paciencia: 8/12
+[17:48:00]     Epoch 14 Batch 0/274 - Loss: 0.0038 - 2s elapsed
+[17:49:21]     Epoch 14 Batch 50/274 - Loss: 0.0211 - 83s elapsed
+[17:50:42]     Epoch 14 Batch 100/274 - Loss: 0.0111 - 163s elapsed
+[17:52:04]     Epoch 14 Batch 150/274 - Loss: 0.0131 - 245s elapsed
+[17:53:27]     Epoch 14 Batch 200/274 - Loss: 0.0097 - 328s elapsed
+[17:54:51]     Epoch 14 Batch 250/274 - Loss: 0.0076 - 412s elapsed
+[17:56:28] Epoch 14: Train=0.0120, Val=0.0573, MAE=0.2044, RMSE=0.2397, MAPE=25.84% - 509s
+[17:56:28]   Paciencia: 9/12
+[17:56:30]     Epoch 15 Batch 0/274 - Loss: 0.0150 - 2s elapsed
+[17:57:52]     Epoch 15 Batch 50/274 - Loss: 0.0165 - 84s elapsed
+[17:59:14]     Epoch 15 Batch 100/274 - Loss: 0.0121 - 166s elapsed
+[18:00:37]     Epoch 15 Batch 150/274 - Loss: 0.0088 - 248s elapsed
+[18:01:58]     Epoch 15 Batch 200/274 - Loss: 0.0107 - 330s elapsed
+[18:03:20]     Epoch 15 Batch 250/274 - Loss: 0.0069 - 412s elapsed
+[18:04:57] Epoch 15: Train=0.0117, Val=0.0679, MAE=0.2303, RMSE=0.2606, MAPE=27.76% - 509s
+[18:04:57]   Paciencia: 10/12
+[18:04:59]     Epoch 16 Batch 0/274 - Loss: 0.0200 - 2s elapsed
+[18:06:22]     Epoch 16 Batch 50/274 - Loss: 0.0106 - 84s elapsed
+[18:07:45]     Epoch 16 Batch 100/274 - Loss: 0.0073 - 167s elapsed
+[18:09:08]     Epoch 16 Batch 150/274 - Loss: 0.0135 - 251s elapsed
+[18:10:31]     Epoch 16 Batch 200/274 - Loss: 0.0142 - 333s elapsed
+[18:11:53]     Epoch 16 Batch 250/274 - Loss: 0.0123 - 416s elapsed
+[18:13:28] Epoch 16: Train=0.0115, Val=0.0456, MAE=0.1841, RMSE=0.2137, MAPE=23.48% - 511s
+[18:13:28]   Paciencia: 11/12
+[18:13:30]     Epoch 17 Batch 0/274 - Loss: 0.0095 - 2s elapsed
+[18:14:52]     Epoch 17 Batch 50/274 - Loss: 0.0095 - 83s elapsed
+[18:16:14]     Epoch 17 Batch 100/274 - Loss: 0.0114 - 166s elapsed
+[18:17:36]     Epoch 17 Batch 150/274 - Loss: 0.0160 - 248s elapsed
+[18:18:57]     Epoch 17 Batch 200/274 - Loss: 0.0163 - 329s elapsed
+[18:20:18]     Epoch 17 Batch 250/274 - Loss: 0.0109 - 409s elapsed
+[18:21:54] Epoch 17: Train=0.0115, Val=0.0437, MAE=0.1829, RMSE=0.2092, MAPE=22.61% - 506s
+[18:21:54]   Paciencia: 12/12
+[18:21:54] 
+Early stopping en epoch 17 (mejor epoch 5)
+[18:21:54] 
+Tiempo total: 148.0 min
+[18:21:54] 
+=== EVALUACIÓN FINAL TEST ===
+[18:22:54] Test Loss: 0.0168
+[18:22:54] Test MAE: 0.1105 NTU
+[18:22:54] Test RMSE: 0.1298 NTU
+[18:22:54] Test MAPE: 13.58%
+[18:22:54] 
+[OK] Modelo y resultados guardados en C:\Users\user\Desktop\proyecto acuacar\gd1-digital-twin\models
+[18:22:54] [OK] Log completo en C:\Users\user\Desktop\proyecto acuacar\gd1-digital-twin\models\training_log_20261028_155350.txt
