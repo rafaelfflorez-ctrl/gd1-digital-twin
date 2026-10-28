@@ -1,0 +1,222 @@
+{
+  "expectations": [
+    {
+      "id": "0a1b6371-c9de-4911-8c80-063bb419cc6f",
+      "kwargs": {
+        "column_list": [
+          "fecha",
+          "estacion_id",
+          "humedad_pct",
+          "precip_mm",
+          "radiacion_wm2",
+          "temp_aire_c",
+          "viento_dir_grados",
+          "viento_vel_ms",
+          "hora",
+          "dia_semana",
+          "mes",
+          "dia_a\u00f1o",
+          "es_fin_semana",
+          "hora_sin",
+          "hora_cos",
+          "dia_a\u00f1o_sin",
+          "dia_a\u00f1o_cos"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_table_columns_to_match_ordered_list"
+    },
+    {
+      "id": "276be12d-54d8-449e-92c3-e41922ea7149",
+      "kwargs": {
+        "column": "fecha"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "32fafa80-c847-45d9-afc0-05f5e6b6c027",
+      "kwargs": {
+        "column": "estacion_id"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "ada1c183-7785-4e3f-9c14-c55c7096962c",
+      "kwargs": {
+        "column": "radiacion_wm2"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "f2fcd766-f515-4948-a840-bcd176dfd3ed",
+      "kwargs": {
+        "column": "temp_aire_c"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "d92582c7-27ab-4917-a50f-b6c4dc885852",
+      "kwargs": {
+        "column": "precip_mm"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "5acd6641-40fe-48f3-b193-3e708c8aaccd",
+      "kwargs": {
+        "column": "radiacion_wm2",
+        "max_value": 1400.0,
+        "min_value": 0.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "b6b7cf7f-2167-47d7-87ae-ea8da778da6e",
+      "kwargs": {
+        "column": "temp_aire_c",
+        "max_value": 45.0,
+        "min_value": -5.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "50f8e6d6-8814-48b3-a71c-097b96e599ef",
+      "kwargs": {
+        "column": "precip_mm",
+        "max_value": 500.0,
+        "min_value": 0.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "dbc1cc0a-d568-4447-af80-60a454c4ce3f",
+      "kwargs": {
+        "column": "humedad_pct",
+        "max_value": 100.0,
+        "min_value": 0.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "60ca40ee-45e9-4ef5-ad3f-51666cea0ff6",
+      "kwargs": {
+        "column": "viento_vel_ms",
+        "max_value": 50.0,
+        "min_value": -5.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "605a3d42-5746-4966-a142-bb826858be5d",
+      "kwargs": {
+        "column": "viento_dir_grados",
+        "max_value": 365.0,
+        "min_value": -5.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "0b9f35e8-73d3-4163-b174-dae7bce8c5fa",
+      "kwargs": {
+        "column": "estacion_id",
+        "value_set": [
+          "100101",
+          "100102",
+          "100103",
+          "100104",
+          "100105",
+          "100106",
+          "100107",
+          "100108"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "3614908a-aaab-4358-811d-579f82444b3e",
+      "kwargs": {
+        "column": "hora",
+        "max_value": 23.0,
+        "min_value": 0.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "a5c719d2-c5f0-4087-b361-dba3fbfcd2cc",
+      "kwargs": {
+        "column": "mes",
+        "max_value": 12.0,
+        "min_value": 1.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "fd07fffc-d817-4b0e-b9ca-84f101255130",
+      "kwargs": {
+        "column": "dia_semana",
+        "max_value": 6.0,
+        "min_value": 0.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "e55d00f1-d150-4c38-9225-cd67465b6ab3",
+      "kwargs": {
+        "max_value": 700000,
+        "min_value": 500000
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_table_row_count_to_be_between"
+    },
+    {
+      "id": "c4f9e012-ed9f-4ccb-af15-dcd5695292b9",
+      "kwargs": {
+        "column_list": [
+          "fecha",
+          "estacion_id"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_compound_columns_to_be_unique"
+    }
+  ],
+  "id": "b2786036-1ddb-4a0f-9bf0-fed6a497d3f6",
+  "meta": {
+    "great_expectations_version": "1.24.1"
+  },
+  "name": "ideam_data_quality",
+  "notes": null
+}

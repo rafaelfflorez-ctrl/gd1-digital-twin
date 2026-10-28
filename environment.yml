@@ -1,0 +1,65 @@
+name: gd1-digital-twin
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  # Core data science
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+  - plotly
+  - jupyter
+  - jupyterlab
+  - ipywidgets
+  # ML/DL
+  - pytorch::pytorch
+  - pytorch::torchvision
+  - pytorch::torchaudio
+  - pytorch::pytorch-cuda=12.1
+  - pyg::pytorch-geometric
+  - xgboost
+  - lightgbm
+  - scikit-learn
+  - statsmodels
+  # Data validation
+  - great-expectations
+  - pandera
+  # Geospatial
+  - geopandas
+  - networkx
+  - folium
+  # Utilities
+  - python-dotenv
+  - pyyaml
+  - tqdm
+  - requests
+  - httpx
+  - pydantic
+  - pydantic-settings
+  # API/Web
+  - fastapi
+  - uvicorn
+  - streamlit
+  # Database
+  - sqlalchemy
+  - duckdb
+  # Testing
+  - pytest
+  - pytest-cov
+  # pip packages
+  - pip:
+      - torch-geometric-temporal
+      - torchmetrics
+      - optuna
+      - mlflow
+      - dvc
+      - pre-commit
+      - black
+      - ruff
+      - mypy
