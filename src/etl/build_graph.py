@@ -207,7 +207,7 @@ def build_pyg_data(ideam_df: pd.DataFrame, acuacar_df: pd.DataFrame,
         else:
             y = torch.tensor([0.0], dtype=torch.float32)
         
-        data = Data(x=x, edge_index=edge_index, edge_attr=edge_attr, y=y, timestamp=ts.isoformat())
+        data = Data(x=x, edge_index=edge_index, edge_attr=edge_attr, y=y, timestamp=pd.Timestamp(ts).isoformat())
         data_list.append(data)
     
     return data_list
